@@ -40,7 +40,7 @@
                     <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="b">b. <span id="option_b"></label></span>
 
                     <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="c">c. <span id="option_c"></label></span>
-                    
+
                     <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="d">d. <span id="option_d"></label></span>
                 </div>
             </div>
@@ -57,11 +57,11 @@
                 console.log(myQuestion);
                 // const question = myQuestion.results[0].question
                 // document.getElementById("question").innerText = question
-                document.getElementById("question").innerText = myQuestion.results[0].question
-                document.getElementById("option_a").innerText = myQuestion.results[0].correct_answer
-                document.getElementById("option_b").innerText = myQuestion.results[0].incorrect_answers[0]
-                document.getElementById("option_c").innerText = myQuestion.results[0].incorrect_answers[1]
-                document.getElementById("option_d").innerText = myQuestion.results[0].incorrect_answers[2]
+                document.getElementById("question").innerHTML = myQuestion.results[0].question
+                document.getElementById("option_a").innerHTML = myQuestion.results[0].correct_answer
+                document.getElementById("option_b").innerHTML = myQuestion.results[0].incorrect_answers[0]
+                document.getElementById("option_c").innerHTML = myQuestion.results[0].incorrect_answers[1]
+                document.getElementById("option_d").innerHTML = myQuestion.results[0].incorrect_answers[2]
                 return myQuestion
             })
         
