@@ -56,12 +56,13 @@ header {
     width: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
 }
 
 .game-card:hover {
-    background-color: lime;
-    transform: scale(1.2);
+    background-color: cyan;
+    transform: scale(1.1);
 }
 
 #modal-btn {
