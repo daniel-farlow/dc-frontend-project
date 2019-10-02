@@ -18,9 +18,9 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h3><span class="scaling-svg-container" id="scaling-svg"><img src="img/laptop.svg"> </span> Insert Random Question Here</h3>
+                    <h3><span class="scaling-svg-container" id="scaling-svg"><img src="img/laptop.svg"> </span> <span id="question">Insert Random Question Here</span></h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body"> 
                     <div class="col-xs-3 col-xs-offset-5">
                         <div id="loadbar" style="display: none;">
                             <div class="blockG" id="rotateG_01"></div>
@@ -35,10 +35,13 @@
                     </div>
         
                     <div class="quiz" id="quiz" data-toggle="buttons">
-                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="a">a. One</label>
-                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="b">b. Two</label>
-                    <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="c">c. Three</label>
-                    <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="d">d. Four</label>
+                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right" ></i></span> <input type="radio" name="q_answer" value="a">a. <span id="option_a"></label></span>
+
+                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="b">b. <span id="option_b"></label></span>
+
+                    <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="c">c. <span id="option_c"></label></span>
+                    
+                    <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="d">d. <span id="option_d"></label></span>
                 </div>
             </div>
             <div class="modal-footer text-muted">
@@ -47,5 +50,21 @@
         </div>
         </div>
         </div>
+        <script>
+            fetch(url="https://opentdb.com/api.php?amount=1&category=18")
+            .then((data) => data.json())
+            .then((myQuestion) => {
+                console.log(myQuestion);
+                // const question = myQuestion.results[0].question
+                // document.getElementById("question").innerText = question
+                document.getElementById("question").innerText = myQuestion.results[0].question
+                document.getElementById("option_a").innerText = myQuestion.results[0].correct_answer
+                document.getElementById("option_b").innerText = myQuestion.results[0].incorrect_answers[0]
+                document.getElementById("option_c").innerText = myQuestion.results[0].incorrect_answers[1]
+                document.getElementById("option_d").innerText = myQuestion.results[0].incorrect_answers[2]
+                return myQuestion
+            })
+        
+        </script>
 </body>
 </html>
