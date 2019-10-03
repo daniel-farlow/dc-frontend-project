@@ -1,10 +1,12 @@
-/* 
-************
-game-wrapper
-game-card 
-************
-*/
+/* QUICK STYLES */
+.pink {color: #F25CA2;}
+.babyBlue {color: #0B9ED9;}
+.gold {color: goldenrod;}
+.blue {color:#021859;}
+.shadowText {text-shadow: 2px 2px 5px black;}
+.shadowBox {box-shadow: 2px 2px 5px black;}
 
+/* GENERAL STYLES */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -70,12 +72,3 @@ header {
     transform: scale(1.1);
 }
 
-.pink {
-    color: #F25CA2;
-}
-.babyBlue {
-    color: #0B9ED9;
-}
-.gold {
-    color: goldenrod;
-}

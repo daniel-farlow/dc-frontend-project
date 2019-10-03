@@ -1,5 +1,5 @@
 /* The Modal Button */
-#modal-btn {
+.modal-btn {
     display: flex;
     justify-content: center;
     padding: 100px;
@@ -7,8 +7,8 @@
     background-color: whitesmoke;
 }
 
-#modal-btn:hover {
-    background: linear-gradient(rgb(128, 128, 128),white);
+.modal-btn:hover {
+    text-shadow: 2px 2px 5px #F25CA2;
 }
 
 /*The Modal (Background)*/
