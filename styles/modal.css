@@ -4,6 +4,11 @@
     justify-content: center;
     padding: 100px;
     color: black;
+    background-color: whitesmoke;
+}
+
+#modal-btn:hover {
+    background: linear-gradient(rgb(128, 128, 128),white);
 }
 
 /*The Modal (Background)*/
@@ -16,9 +21,7 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: red;
-    /* background-color: rgb(0,0,0); Fallback color
-    background-color: rgba(0, 0, 0, 0.4); Black w/ Opacity */
+    background: linear-gradient(#021859,#0B9ED9);
 }
 
 /* Modal Content/Box */
@@ -28,10 +31,72 @@
     padding: 20px;
     border: 1px solid #888;
     border-radius: 20px;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
+    overflow: hidden;
+
 }
 
+.separator {
+    background-color: lightgrey;
+    position: relative;
+    right: 50px;
+    height: 1px;
+    width: 100vw;
+    border-radius: 15%;
+    margin: 20px 0;
+}
 
 /* Modal Header */
+.modal-header {
+    display: flex;
+    justify-content: center;
+}
 
 /* Modal Body */
+.modal-body {
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.choices {
+    margin: 10px 0 0 20px;
+    background:linear-gradient(rgb(0, 183, 255),rgb(7, 86, 118)) ;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 550px;
+    font-size: 16px;
+    border: 1px solid gray;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.choices:hover {
+    transform: scale(1.05);
+    background:linear-gradient(rgb(7, 86, 118),rgb(0, 183, 255)s);
+    text-shadow: 2px 2px 5px black;
+    opacity: 1;
+}
+
+.choices:active {
+    background: linear-gradient(lime,cyan);
+    color: blue;
+}
+
+#qid {
+    text-align: center;
+    background-color: #F25CA2;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 2px;
+    color: white;
+}
+
+span#qid {
+    margin: 10px 5px 5px 5px;
+}
