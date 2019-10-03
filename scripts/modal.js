@@ -1,7 +1,7 @@
 'use strict';
 
 const modal = document.getElementById("card-modal");
-const btn = document.getElementById("modal-btn");
+const btn = document.querySelector(".modal-btn");
 
 //When the user clicks on the button, open the modal. Pretty much taking a css element and converting it into a javascript object.
 btn.onclick = function() {

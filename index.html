@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="stylesheet" href="./styles/tablet.css">
     <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>DevelopMental</title>
 </head>
 <body>
@@ -17,23 +18,9 @@
             <h1><span class="pink">Develop</span><span class="gold">[</span><span class="babyBlue">MENTAL</span><span class="gold">]</span></h1>
         </nav>
     </header>
-
     <div class='container'>
         <div class='game-wrapper'>
-            <!---
-            ______________________________
-            |                            | 
-            |                            |           
-            |                            |
-            |                            |
-            |     GAME WRAPPER BEGIN     |
-            |                            |
-            |                            |
-            |                            |
-            |____________________________|
-            -->
-            <!--Game Card/Modal Button-->
-            <div class="game-card">
+            <div class="card">
                 <button class="modal-btn" id="sports" data-category-id="21">
                     <h2><i class="fas fa-football-ball fa-5x blue"></i></h2>
                 </button>
@@ -41,166 +28,29 @@
             <div id='card-modal' class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3><span id="qid">1. </span>What color is the Sky?</h3>
+                        <div id="qid">
+                            <p>25</p>
+                        </div>
+                        <div id="qtext">
+                            <h3>What's the color of the Sky?</h3>
+                        </div>
                     </div>
                     <div class="separator"></div>
                     <div class="modal-body">
                         <ul>
-                            <button class="choices" id="">A) BLUE</button>
-                            <button class="choices" id="">B) GREEN</button>
-                            <button class="choices" id="">C) PURPLE</button>
-                            <button class="choices" id="">D) N.O.T.A</button>
+                            <button class="choices" id="ch_1">A) BLUE</button>
+                            <button class="choices" id="ch_2">B) GREEN</button>
+                            <button class="choices" id="ch_3">C) PURPLE</button>
+                            <button class="choices" id="ch_4">D) N.O.T.A</button>
                         </ul>
                     </div>
                 </div>
             </div>
-            <!-- <div class="game-card">
-                <button id="modal-btn">
-                    <h2>Category Name</h2>
-                </button>
-            </div>
-
-            <div class="game-card">
-                <button id="modal-btn">
-                    <h2>Category Name</h2>
-                </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-                </div>
-
-            <div class="game-card">
-                <button id="modal-btn">
-                    <h2>Category Name</h2>
-                </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div>
-
-            <div class="game-card">
-                    <button id="modal-btn">
-                        <h2>Category Name</h2>
-                    </button>
-            </div> -->
-            <!--Actual Modal-->
         </div>
     </div>
     <script src="scripts/modal.js"></script>
     <script src="https://kit.fontawesome.com/191478806b.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

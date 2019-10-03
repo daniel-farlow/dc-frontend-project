@@ -55,7 +55,7 @@ header {
     background-color:#0B9ED9;
 }
 
-.game-card {
+.card {
     margin: 5px;
     display: flex;
     overflow: hidden;
@@ -68,7 +68,7 @@ header {
     box-shadow: 2px 2px 4px rgba(19, 19, 19, 0.598);
 }
 
-.game-card:hover {
+.card:hover {
     transform: scale(1.1);
 }
 

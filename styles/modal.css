@@ -26,6 +26,7 @@
 
 /* Modal Content/Box */
 .modal-content {
+    font-family: 'Open Sans', sans-serif;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -33,7 +34,6 @@
     border-radius: 20px;
     width: 50%; /* Could be more or less, depending on screen size */
     overflow: hidden;
-
 }
 
 .separator {
@@ -50,6 +50,7 @@
 .modal-header {
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 /* Modal Body */
@@ -92,11 +93,19 @@ ul {
     text-align: center;
     background-color: #F25CA2;
     border-radius: 100px;
-    padding: 10px;
-    margin: 2px;
+    padding: 20px;
     color: white;
+    margin: 10px 5px 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-span#qid {
-    margin: 10px 5px 5px 5px;
+div#qtext {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    margin: 5px;
+    padding: 15px 1px 1px 1px;
 }
