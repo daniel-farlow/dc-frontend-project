@@ -1,9 +1,6 @@
 'use strict';
 
-/*
-Sample JSON response:
-*/
-
+/* Sample JSON response */
 const sampleResponse = {
     "response_code": 0,
     "results": [
@@ -129,41 +126,9 @@ const sampleResponse = {
         }
     ]
 }
-
 //GRAB QUESTION Sports Question
 const sports = document.getElementById('qtext').innerHTML = sampleResponse.results[0].question;
 const ch_1 = document.getElementById('ch_1').innerHTML = "A) " + sampleResponse.results[0].correct_answer;
 const ch_2 = document.getElementById('ch_2').innerHTML = "B) " + sampleResponse.results[0].incorrect_answers[0];
 const ch_3 = document.getElementById('ch_3').innerHTML = "C) " + sampleResponse.results[0].incorrect_answers[1];
 const ch_4 = document.getElementById('ch_4').innerHTML = "D) " + sampleResponse.results[0].incorrect_answers[2];
-
-
-//GRAB ANSWER CHOICES
-
-// SAMPLE RESPONSE OBJECT IS ABOVE
-
-// const sportsCard = document.querySelector('#sports');
-
-// const sportsCardQuestions = document.querySelector('.questions');
-
-// const sportsCardQuestionsList = document.querySelector('.question-list');
-
-// sportsCard.addEventListener('click',() => {
-//     let allCards = document.querySelectorAll('.card');
-//     for (let i = 0; i < allCards.length; ++i) {
-//         allCards[i].classList.add('hide');
-//     }
-//     const questionTitle = document.getElementById(qtext);
-//     questionTitle.innerHTML = sampleResponse.results[0].question;
-//     sportsCardQuestions.prepend(questionTitle);
-//     let categoryQuestions = [];
-//     categoryQuestions.push(sampleResponse.results[0].correct_answer);
-//     sampleResponse.results[0].incorrect_answers.forEach(answer => {
-//         categoryQuestions.push(answer);
-//     })
-//     categoryQuestions.forEach(question => {
-//         let questionItem = document.createElement('li');
-//         questionItem.innerHTML = question;
-//         sportsCardQuestionsList.append(questionItem)
-//     })
-// })
