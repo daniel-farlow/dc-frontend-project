@@ -126,6 +126,7 @@ const sampleResponse = {
         }
     ]
 }
+
 //GRAB QUESTION Sports Question
 const sports = document.getElementById('qtext').innerHTML = sampleResponse.results[0].question;
 const ch_1 = document.getElementById('ch_1').innerHTML = "A) " + sampleResponse.results[0].correct_answer;
