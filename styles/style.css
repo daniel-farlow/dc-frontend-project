@@ -6,19 +6,32 @@ html {
     box-sizing: inherit;
 }
 
+/* body {
+    background-color: blue;
+} */
+
 .question-container {
     min-height: 100vh;
     min-width: 100vw;
     background-color: green;
     padding-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
 }
 
 .question-wrapper {
-    max-width: 80%;
+    max-width: 25%;
+    height: 200px;
     background-color: orange;
+    /* width: 500px;
+    height: 500px; */
     padding: 5px;
     margin: 5px auto;
     border-radius: 5px;
+    /* position: absolute; */
+    /* top: 0;
+    right: 50; */
 }
 
 .question-wrapper:hover {
