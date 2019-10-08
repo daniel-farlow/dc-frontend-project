@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DevelopMental</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Let's Get Quizzical</title>
 </head>
+
 <body>
-    <section>
+    <header>
+        <form action="#" id="questionsForm">
+            <label>Questions: </label>
+            <select id="questionNumOptions"></select>
+        </form>
         <nav>
-            <ul>
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-            </ul>
+            <h1 class="gamename"><span class="pink">Let's</span><span class="gold">Get</span><span
+                    class="babyBlue">Quizzical</span><span class="gold">!</span></h1>
         </nav>
-    </section>
-    <h1>This is Puja's edit!</h1>
-        <p>Here's your precious paragraph.</p>
+    </header>
+    <div class="container">
+        <div class="question-container"></div>
+    </div>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>
