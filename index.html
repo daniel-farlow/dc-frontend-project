@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>DevelopMental</title>
+    <link rel="stylesheet" href="styles/modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Let's Get Quizzical</title>
 </head>
-<body>
-    <form action="#" id="questionsForm">
-        <select id="categoryOptions" name="categories">
-        </select>
-        <select id="questionNumOptions">
-            <option value="5">5</option>
-            <option value="10" selected>10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-        </select>
-        <br><br>
-        <input type="submit" value="Play Now!">
-    </form>
-    <div class="question-container">
-        <!-- <div class="question">
 
-        </div> -->
+<body>
+    <header>
+        <form action="#" id="questionsForm">
+            <label>Questions: </label>
+            <select id="questionNumOptions"></select>
+        </form>
+        <nav>
+            <h1 class="gamename"><span class="pink">Let's</span><span class="gold">Get</span><span
+                    class="babyBlue">Quizzical</span><span class="gold">!</span></h1>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="question-container"></div>
     </div>
-    <script src="./scripts/utilities.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

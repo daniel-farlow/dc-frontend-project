@@ -1,45 +1,203 @@
+/* 
+************
+QUICK STYLES
+------------ 
+*/
+.pink {color: #F25CA2;}
+.babyBlue {color: #0B9ED9;}
+.gold {color: goldenrod;}
+.blue {color:#021859;}
+.shadowText {text-shadow: 2px 2px 5px black;}
+.shadowBox {box-shadow: 2px 2px 5px black;}
+
+/* GENERAL STYLES */
 html {
     box-sizing: border-box;
+    font-family: 'Open Sans', 'roboto', 'helvetica', sans-serif;
+    font-size: 14px;
+    min-height: 100%;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+body {
+    background: linear-gradient(rgba(113, 44, 76, 0.776), #021859);
+    height: auto;
+    margin: 0;
+    overflow: auto;
 }
 
-/* body {
-    background-color: blue;
-} */
+header {
+    /* border: 3px dotted red; */
+    font-family: 'Permanent Marker', sans-serif;
+    color: #F25CA2;
+    font-size: 1.5rem;
+    /* position: fixed; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(12,22,81,0.7);
+    border-bottom: 5px solid #F25CA2;
+}
 
+h1 {
+    color: goldenrod;
+}
+
+.gamename {
+    font-size: 4.5rem;
+}
+
+.card {
+    font-family: "Lalezar";
+    font-size: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    color: #021859;
+}
+
+/* !RED DOT */
 .question-container {
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: green;
+    border: 1px solid grey;
+    min-height: 425px;
+    height: 100%;
+    width: 65vw;
+    background-color:#0B9ED9;
     padding-top: 5px;
+    border-radius: 10px;
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-around;
 }
 
+/* !BLUE DOT */
 .question-wrapper {
-    max-width: 25%;
-    height: 200px;
-    background-color: orange;
-    /* width: 500px;
-    height: 500px; */
-    padding: 5px;
+    border: 1px solid grey;
+    padding: 20px;
+    /* max-width: 25%; */
+    width: 600px;
+    height: 300px;
+    background: goldenrod;
+    padding: 10px;
     margin: 5px auto;
-    border-radius: 5px;
-    /* position: absolute; */
-    /* top: 0;
-    right: 50; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    overflow: auto;
 }
 
-.question-wrapper:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
-}
-
+/* !CYAN DOT */
 .answer-choices {
+    /* background: linear-gradient(cyan,white); */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
     list-style-type: upper-alpha;
-    margin-bottom: 3px;
+    list-style-position: inside;
+    opacity: 0.8;
+    margin: 10px 5px 2px 5px;
+    color: white;
+    background: linear-gradient(rgb(141, 155, 186),rgb(82, 0, 164));
+}
+
+.answer-choices:hover{
+    transform:scale(1.05);
+    transition-duration: 0.5s;
+    opacity: 1;
+    cursor: pointer;
+    color: black;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    /* height: 100vh; */
+}
+
+.ol {
+    transform: scale(0.9);
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+
+button {
+    margin: 5px;
+    background-color: goldenrod;
+    display: inline-flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 4px rgba(19, 19, 19, 0.598);
+    position: relative;
+}
+
+button:hover{
+    transform:scale(1.1);
+    border: 4px solid #F25CA2;
+}
+
+button img {
+    height: 100%;
+    width: 100%;
+    max-height: 100px;
+    max-width: 100px;
+    position: absolute;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    margin: 10px auto;
+    padding: 2.5px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #021859;
+}
+
+label {
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        line-height: 0.05;
+    }
 }
